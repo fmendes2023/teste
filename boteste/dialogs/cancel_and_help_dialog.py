@@ -40,7 +40,7 @@ class CancelAndHelpDialog(ComponentDialog):
                 cancel_message_text, cancel_message_text, InputHints.ignoring_input
             )
 
-            if text in ("cancel", "quit"):
+            if text in  ("cancel", "quit","adeus","goodbye"):
                 await inner_dc.context.send_activity(cancel_message)
                 return await inner_dc.cancel_all_dialogs()
 
